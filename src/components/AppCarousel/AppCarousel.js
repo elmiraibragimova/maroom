@@ -44,15 +44,11 @@ class AppCarousel extends Component {
             </div>
 
             <div className="AppCarousel__nav">
-              <ButtonBack>
-                <button type="button" className="AppCarousel__button">
-                  <span>←</span>
-                </button>
+              <ButtonBack className="AppCarousel__button">
+                <span>←</span>
               </ButtonBack>
-              <ButtonNext>
-                <button type="button" className="AppCarousel__button">
-                  <span>→</span>
-                </button>
+              <ButtonNext className="AppCarousel__button">
+                <span>→</span>
               </ButtonNext>
             </div>
           </div>
