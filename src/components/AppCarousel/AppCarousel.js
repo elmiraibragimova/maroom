@@ -6,17 +6,31 @@ import {
   Slider,
   Slide,
   ButtonBack,
-  ButtonNext
+  ButtonNext,
+  DotGroup
 } from 'pure-react-carousel'
-
 import 'pure-react-carousel/dist/react-carousel.es.css'
 
+import { TOTAL_SLIDES } from '../../constants'
 import CarouselItem from '../CarouselItem/CarouselItem'
 import './AppCarousel.scss'
 
 class AppCarousel extends Component {
   state = {
-    apartments: []
+    apartments: [],
+    currentIndex: 1
+  }
+
+  handleBackClick = () => {
+    this.setState({
+      currentIndex: Math.max(1, this.state.currentIndex - 1)
+    })
+  }
+
+  handleNextClick = () => {
+    this.setState({
+      currentIndex: Math.min(TOTAL_SLIDES, this.state.currentIndex + 1)
+    })
   }
 
   componentDidMount() {
@@ -33,22 +47,29 @@ class AppCarousel extends Component {
       <div className="AppCarousel">
         <CarouselProvider
           naturalSlideWidth={100}
-          totalSlides={3}
+          totalSlides={TOTAL_SLIDES}
           dragEnabled={true}
           visibleSlides={1}
           isIntrinsicHeight={true}
         >
           <div className="AppCarousel__controls">
             <div className="AppCarousel__counter">
-              <span>3</span> / <span>3</span>
+              <span>{this.state.currentIndex}</span> /{' '}
+              <span>{this.state.apartments.length}</span>
             </div>
 
             <div className="AppCarousel__nav">
-              <ButtonBack className="AppCarousel__button">
+              <ButtonBack
+                className="AppCarousel__button"
+                onClick={this.handleBackClick}
+              >
                 <span className="AppCarousel__arrow">←</span>
                 <span className="AppCarousel__chevron left"></span>
               </ButtonBack>
-              <ButtonNext className="AppCarousel__button">
+              <ButtonNext
+                className="AppCarousel__button"
+                onClick={this.handleNextClick}
+              >
                 <span className="AppCarousel__arrow">→</span>
                 <span className="AppCarousel__chevron right"></span>
               </ButtonNext>
@@ -59,8 +80,8 @@ class AppCarousel extends Component {
             <Slider>
               {apartments.map((apartment, index) => {
                 return (
-                  <Slide index={index}>
-                    <div key={index}>
+                  <Slide index={index} key={index}>
+                    <div>
                       <CarouselItem apartment={apartment} />
                     </div>
                   </Slide>
