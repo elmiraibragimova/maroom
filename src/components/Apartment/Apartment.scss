@@ -12,6 +12,17 @@
   padding: 24px 24px 16px 24px;
   margin-bottom: 32px;
 
+  @media (max-width: 992px) {
+    left: 50%;
+    right: auto;
+    bottom: -32px;
+    top: auto;
+
+    transform: translateX(-50%);
+    box-shadow: none;
+    border-radius: 6px 6px 0 0;
+  }
+
   &__description {
     color: #8a94a6;
   }
