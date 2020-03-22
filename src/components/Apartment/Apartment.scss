@@ -1,0 +1,105 @@
+.Apartment {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  width: 328px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 6px 6px;
+  transition: all .3s;
+  background: #fff;
+  display: block;
+  border: 1px solid #e1e4e8;
+  padding: 24px 24px 16px 24px;
+  margin-bottom: 32px;
+
+  &__description {
+    color: #8a94a6;
+  }
+
+  &__accent {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__station,
+  &__container {
+    > span:last-child {
+      color: #8a94a6;
+    }
+  }
+
+  &__station {
+    margin-bottom: 8px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-bottom: 1px solid rgba(0 ,0 ,0, .1);
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+
+  &__container {
+    > span:first-child {
+      font-size: 14px;
+      display: block;
+    }
+
+    > span:last-child {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__mark {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  &__details {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  sup {
+    position: relative;
+    font-size: 10.5px;
+    top: 1px;
+  }
+
+  &__icon-checked {
+    margin-right: 10px;
+  }
+
+  &__status {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  &__status_booked {
+    background-color: #ffecc7;
+    color: #f07300;
+  }
+}
