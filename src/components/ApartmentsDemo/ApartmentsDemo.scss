@@ -13,10 +13,19 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+
+    @media (max-width: 992px) {
+      display: block;
+    }
   }
 
   &__info {
     width: 58%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__details {
@@ -26,6 +35,15 @@
 
     & > div {
       width: 30%;
+
+      @media (max-width: 992px) {
+        width: auto;
+      }
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      justify-content: space-between;
     }
   }
 
