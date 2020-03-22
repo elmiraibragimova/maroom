@@ -1,12 +1,18 @@
 .ApartmentsDemo {
   &__intro {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f8f9fb;
+  }
+
+  &__container {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #f8f9fb;
+    width: 98%;
+    max-width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
   }
 
   &__info {
