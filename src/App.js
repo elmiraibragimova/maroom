@@ -1,9 +1,14 @@
 import React from 'react'
-import logo from './logo.svg'
+
+import ApartmentsDemo from './components/ApartmentsDemo/ApartmentsDemo'
 import './App.css'
 
 function App() {
-  return <div className="App"></div>
+  return (
+    <div className="App">
+      <ApartmentsDemo />
+    </div>
+  )
 }
 
 export default App
