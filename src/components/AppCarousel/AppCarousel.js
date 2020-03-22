@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+import CarouselItem from '../CarouselItem/CarouselItem'
 import './AppCarousel.scss'
 
 class AppCarousel extends Component {
@@ -39,10 +40,7 @@ class AppCarousel extends Component {
           {apartments.map((apartment, index) => {
             return (
               <div key={index}>
-                <img
-                  src={apartment.photo}
-                  alt={`Apartment on ${apartment.adress}`}
-                />
+                <CarouselItem apartment={apartment} />
               </div>
             )
           })}
