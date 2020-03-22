@@ -33,7 +33,7 @@ class AppCarousel extends Component {
       <div className="AppCarousel">
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={125}
+          naturalSlideHeight={32.5}
           totalSlides={3}
         >
           <div className="AppCarousel__controls">

@@ -1,6 +1,4 @@
 .ApartmentsDemo {
-  background-color: #f8f9fb;
-
   &__intro {
     display: flex;
     justify-content: space-between;
@@ -8,6 +6,7 @@
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #f8f9fb;
   }
 
   &__info {
