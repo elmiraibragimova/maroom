@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext
+} from 'pure-react-carousel'
+
+import 'pure-react-carousel/dist/react-carousel.es.css'
+
 import CarouselItem from '../CarouselItem/CarouselItem'
 import './AppCarousel.scss'
 
@@ -21,30 +31,44 @@ class AppCarousel extends Component {
 
     return (
       <div className="AppCarousel">
-        <div className="AppCarousel__controls">
-          <div className="AppCarousel__counter">
-            <span>3</span> / <span>3</span>
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={125}
+          totalSlides={3}
+        >
+          <div className="AppCarousel__controls">
+            <div className="AppCarousel__counter">
+              <span>3</span> / <span>3</span>
+            </div>
+
+            <div className="AppCarousel__nav">
+              <ButtonBack>
+                <button type="button" className="AppCarousel__button">
+                  <span>←</span>
+                </button>
+              </ButtonBack>
+              <ButtonNext>
+                <button type="button" className="AppCarousel__button">
+                  <span>→</span>
+                </button>
+              </ButtonNext>
+            </div>
           </div>
 
-          <div className="AppCarousel__nav">
-            <button type="button" className="AppCarousel__button">
-              <span>←</span>
-            </button>
-            <button type="button" className="AppCarousel__button">
-              <span>→</span>
-            </button>
+          <div className="AppCarousel__container">
+            <Slider>
+              {apartments.map((apartment, index) => {
+                return (
+                  <Slide index={index}>
+                    <div key={index}>
+                      <CarouselItem apartment={apartment} />
+                    </div>
+                  </Slide>
+                )
+              })}
+            </Slider>
           </div>
-        </div>
-
-        <div className="AppCarousel__container">
-          {apartments.map((apartment, index) => {
-            return (
-              <div key={index}>
-                <CarouselItem apartment={apartment} />
-              </div>
-            )
-          })}
-        </div>
+        </CarouselProvider>
       </div>
     )
   }
