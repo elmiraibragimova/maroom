@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import { ReactComponent as Check } from './icons/check.svg'
 import './Apartment.scss'
 
 class Apartment extends Component {
@@ -62,7 +63,10 @@ class Apartment extends Component {
 
           {status === 'booked' && (
             <div className="Apartment__status Apartment__status_booked">
-              <span className="Apartment__icon-checked">✔</span> Сдано
+              <span className="Apartment__icon-checked">
+                <Check width="12" height="12" />
+              </span>
+              Сдано
             </div>
           )}
         </div>
