@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+import AppCarousel from '../AppCarousel/AppCarousel'
 import './ApartmentsDemo.scss'
 
 class ApartmentsDemo extends Component {
@@ -34,7 +36,9 @@ class ApartmentsDemo extends Component {
           </div>
         </section>
 
-        <section className="ApartmentsDemo__carousel"></section>
+        <section className="ApartmentsDemo__carousel">
+          <AppCarousel />
+        </section>
       </article>
     )
   }
