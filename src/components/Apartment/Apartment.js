@@ -4,6 +4,10 @@ import { ReactComponent as Check } from './icons/check.svg'
 import './Apartment.scss'
 
 class Apartment extends Component {
+  formatPrice = price => {
+    return `${price.toLocaleString()}₽`
+  }
+
   render() {
     const {
       address,
@@ -59,7 +63,7 @@ class Apartment extends Component {
         </div>
 
         <div className="Apartment__info">
-          <div className="Apartment__accent">{price}₽</div>
+          <div className="Apartment__accent">{this.formatPrice(price)}</div>
 
           {status === 'booked' && (
             <div className="Apartment__status Apartment__status_booked">
