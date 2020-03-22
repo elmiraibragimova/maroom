@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/maroom/precache-manifest.64384c4f005a4cd29f65234ee4438cc5.js"
+  "/maroom/precache-manifest.127a83e15680f45c2ca989db225be5c6.js"
 );
 
 self.addEventListener('message', (event) => {

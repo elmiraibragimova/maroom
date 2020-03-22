@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7f9ce92535bbc4e142799b9dedb74e5",
+    "revision": "e80a3a626dc035876067bcc31791ba87",
     "url": "/maroom/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/maroom/static/css/2.72d5056d.chunk.css"
   },
   {
-    "revision": "8b9399342f680ee54ba9",
+    "revision": "eab2237262d0ffb80d5b",
     "url": "/maroom/static/css/main.e79e8837.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/maroom/static/js/2.29b011ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b9399342f680ee54ba9",
-    "url": "/maroom/static/js/main.c71405ee.chunk.js"
+    "revision": "eab2237262d0ffb80d5b",
+    "url": "/maroom/static/js/main.a31cf9ae.chunk.js"
   },
   {
     "revision": "d3ecf156466cc57c2277",

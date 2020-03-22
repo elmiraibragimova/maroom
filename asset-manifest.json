@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/maroom/static/css/main.e79e8837.chunk.css",
-    "main.js": "/maroom/static/js/main.c71405ee.chunk.js",
-    "main.js.map": "/maroom/static/js/main.c71405ee.chunk.js.map",
+    "main.js": "/maroom/static/js/main.a31cf9ae.chunk.js",
+    "main.js.map": "/maroom/static/js/main.a31cf9ae.chunk.js.map",
     "runtime-main.js": "/maroom/static/js/runtime-main.f58780f8.js",
     "runtime-main.js.map": "/maroom/static/js/runtime-main.f58780f8.js.map",
     "static/css/2.72d5056d.chunk.css": "/maroom/static/css/2.72d5056d.chunk.css",
     "static/js/2.29b011ca.chunk.js": "/maroom/static/js/2.29b011ca.chunk.js",
     "static/js/2.29b011ca.chunk.js.map": "/maroom/static/js/2.29b011ca.chunk.js.map",
     "index.html": "/maroom/index.html",
-    "precache-manifest.64384c4f005a4cd29f65234ee4438cc5.js": "/maroom/precache-manifest.64384c4f005a4cd29f65234ee4438cc5.js",
+    "precache-manifest.127a83e15680f45c2ca989db225be5c6.js": "/maroom/precache-manifest.127a83e15680f45c2ca989db225be5c6.js",
     "service-worker.js": "/maroom/service-worker.js",
     "static/css/2.72d5056d.chunk.css.map": "/maroom/static/css/2.72d5056d.chunk.css.map",
     "static/css/main.e79e8837.chunk.css.map": "/maroom/static/css/main.e79e8837.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.72d5056d.chunk.css",
     "static/js/2.29b011ca.chunk.js",
     "static/css/main.e79e8837.chunk.css",
-    "static/js/main.c71405ee.chunk.js"
+    "static/js/main.a31cf9ae.chunk.js"
   ]
 }
