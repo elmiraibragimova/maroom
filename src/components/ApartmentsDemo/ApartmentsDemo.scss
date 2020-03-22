@@ -1,8 +1,13 @@
 .ApartmentsDemo {
+  background-color: #f8f9fb;
+
+  @media (max-width: 992px) {
+    padding-bottom: 100px;
+  }
+
   &__intro {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #f8f9fb;
   }
 
   &__container {
