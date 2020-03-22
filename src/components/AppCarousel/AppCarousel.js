@@ -33,7 +33,7 @@ class AppCarousel extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://www.mocky.io/v2/5e774edd3300004c00099f2c`).then(res => {
+    axios.get(`https://www.mocky.io/v2/5e774edd3300004c00099f2c`).then(res => {
       const apartments = [...res.data.apartments]
       this.setState({ apartments })
     })
