@@ -46,4 +46,11 @@
       font-weight: 600;
     }
   }
+
+  .carousel__back-button,
+  .carousel__next-button {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
 }
