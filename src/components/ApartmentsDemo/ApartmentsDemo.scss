@@ -6,8 +6,12 @@
   }
 
   &__intro {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+
+    @media (max-width: 992px) {
+      padding-bottom: 35px;
+    }
   }
 
   &__container {
@@ -19,6 +23,14 @@
     padding-right: 15px;
     margin: auto;
 
+    &:nth-child(2) {
+      margin-top: 10px;
+
+      @media (max-width: 992px) {
+        margin-top: 25px;
+      }
+    }
+
     @media (max-width: 992px) {
       display: block;
     }
@@ -29,7 +41,7 @@
 
     @media (max-width: 992px) {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 

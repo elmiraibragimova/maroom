@@ -36,6 +36,11 @@ class ApartmentsDemo extends Component {
               </div>
             </div>
           </div>
+          <div className="ApartmentsDemo__container">
+            <a href="#" className="link link_as-button">
+              Сдать квартиру
+            </a>
+          </div>
         </section>
 
         <section className="ApartmentsDemo__carousel">
